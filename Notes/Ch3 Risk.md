@@ -85,11 +85,11 @@ __Appendix C: Return and Statistics Basics__
       2. downside risk is the square root of the semivariance
          1. statistical properties are not well known
          2. it is computationally challenging for large portfolio construction problems
-         3. Aggregating semivariance from assets to portfolios is extremely difficult to do well
+         3. **Aggregating semivariance from assets to portfolios** is extremely difficult to do well
          4. when the investment returns are reasonably symmetric, the downside risk are simply proportional to std or variance and so contain no additional information.
          5. When the return is not symmetric, it is hard to forecast downside risk. Return asymmetries are not stable over time and difficult to predict. Realzied downside risk may not be a good forecast of future downside risk.
-         6. we estimate it only half of the data, so we lose statistical accuracy. This problem is accentuated for target semivariance,
-7. _Shortfall probability_: closely relateed to an intuitive conception of what risk is. It is the probability that the return will lie below some target amount.
+         6. **we estimate it only half of the data, so we lose statistical accuracy.** This problem is accentuated for target semivariance,
+7. _Shortfall probability_: closely related to an intuitive conception of what risk is. It is the probability that the return will lie below some target amount.
    1. Pros: intuitive
    2. Cons: 
       1. ambiguity, poor statistical understanding, difficulty of forecasting, and dependence on individual investor preferences.
@@ -154,7 +154,12 @@ __Appendix C: Return and Statistics Basics__
 5. full covariance model based on historical returns
 
    1. is not robust nor reasonable
+      1. merge/ spinoff 
    2. it requires $T \gt N$
+      1. T period, N stocks
+      2. TN observations, N(N+1)/2 independent estimates
+      3. 2 observations for 1 estimate
+      4. T has to be no smaller than N+1
    3. problems:
       1. Circumventing the $T>N$ restriction requires short time periods, one day or one week, while the forecast horizon of the manager is generally one quarter or one year.
       2. Historical risk cannot deal with the changing nature of a company. Mergers and spinoffs cause problems.
@@ -193,7 +198,7 @@ __Appendix C: Return and Statistics Basics__
 3. It is sometimes called _macrofactors_
 4. 3 defects:
    1. we must estimate the response coefficient through regression analysis or some similar technique. This leads to errors in the estimates, commonly called an _error in variables_ problem
-   2. we base the estimate on behavior over a past period of generally 5 years and it may not be an accurate description of the current situation. These response coefficients can be nonstationary.
+   2. we base the estimate on behavior over a past period of generally 5 years and **it may not be an accurate description of the current situation**. These response coefficients can be nonstationary.
    3. Several of the macroeconomic data items are of poor quality, gathered by the government rather than observed in the market. This leads to inaccurate, delayed, and relatively infrequent observations
 
 ### 3.6.2 Cross-Sectional Comparisons
@@ -214,7 +219,7 @@ __Appendix C: Return and Statistics Basics__
 
 
 
-3. Choose the factor following the 3 criteria
+3. Choose the factor following the **3 criteria**
    1. incisive: distinguish returns
    2. intuitive: interpretable and recognizable dimensions of the market
    3.  interesting: explain some part of the performacne
@@ -250,6 +255,9 @@ __Appendix C: Return and Statistics Basics__
       1. Where $\lang x_{raw}\rang$ is the raw exposure value mean
       2. each risk index exposure has mean 0 and standard deviation 1. 
       3. facilitates the handling of outliers
+6. Usage of Risk Models
+   1. Portfolio risk analysis
+   2. Forecast Total Risk/ Active Risk/ Residual Risk, beta, etc.
 
 ## 3.9 Structural Risk Model Covariance
 
@@ -292,9 +300,18 @@ How to answer question 4?
 
 # Technical Appendix
 
+Risk Model Details
 
-
-
+- Basic Model
+- Model Assumption
+  - specific return is uncorrelated with factor return
+  - specific return is uncorrelated with each other
+- Stock Covariance Matrix
+  - V = X F X^T + Delta
+- Estimation of Factor Return
+- Factor Covariance Matrix & Specific Risk
+- Portfolio Risk
+- Risk Attribution
 
 
 
