@@ -56,7 +56,7 @@ Ch22 Summary 577 - 580
 
 __Appendix C: Return and Statistics Basics__
 
-## 11.1 Introduction
+## 12.1 Introduction
 
 1. Highlights:
    1. Information analysis is a two-step process
@@ -64,7 +64,7 @@ __Appendix C: Return and Statistics Basics__
    3. Step 2 is to analyze the performance of those portfolios
    4. Event studies provide analysis when information arrives episodically
 
-## 11.2 Information and Active Management
+## 12.2 Information and Active Management
 
 1. _alpha_, or residual return: beta-adjusted return relative to a benchmark.
 2. Information classification
@@ -76,13 +76,13 @@ __Appendix C: Return and Statistics Basics__
       1. classify assets into groups
    4. historical, contemporary, or forecast
 
-## 11.3 Information Analysis
+## 12.3 Information Analysis
 
 1. Two steps
    1. Turn predictions into portfolios
    2. Evaluate the performance of those portfolios
 
-## 11.4 Step1: Information into Portfolios
+## 12.4 Step1: Information into Portfolios
 
 1. Six possible ways
    1. With buy and sell recommendations, we could equal-( or value-) weight the buy group and the sell group
@@ -93,11 +93,11 @@ __Appendix C: Return and Statistics Basics__
    6. Elaboration of procedure 5: we can control the portfolios to match a set of prespecified control variables, like industry, sector, or small-capitalization stock exposures. 
 2. Based on the controlled experiment, procedure 5 and 6 are usually the best approach for analyzing the information contained in any numerical scores.
 
-## 11.5 Step 2 : Performance Evaluation
+## 12.5 Step 2 : Performance Evaluation
 
 1. Cumulative return and some basic mean and std statistics
 
-### 11.5.1 t statistics, information ratios, and information coefficients
+### 12.5.1 t statistics, information ratios, and information coefficients
 
 1. regression analysis on the portfolio returns, regressing the excess portfolio returns against the excess benchmark returns, to separate the porfolio return into two components, one benchmark-relateed and the other non-benchmark-related:
 
@@ -119,12 +119,12 @@ __Appendix C: Return and Statistics Basics__
 
 6. $\mathrm{IR} \approx \mathrm{IC} \cdot \sqrt{\mathrm{BR}}$
 
-### 11.5.2 Advanced Topics in Performance Analysis
+### 12.5.2 Advanced Topics in Performance Analysis
 
 1. Portfolio Turnover
 2. more detailed aspects related strategies
 
-## 11.6 Event Studies
+## 12.6 Event Studies
 
 1. Three types of variables play a role in event studies:
    1. description of the event
@@ -134,7 +134,7 @@ __Appendix C: Return and Statistics Basics__
    3. conditioning variables from before the event
       1. eg. surprise in the previous quarter, predecessor’s fate : retired, fired or departed?, company leverage
 
-### 11.6.1 How to do an event study
+### 12.6.1 How to do an event study
 
 1. $n = 1,\cdots, N$ events, residual returns cumulated from period 1 to period j following each event, $\theta_{n}(1,j)$, the residual risk estimate over the period $w_n(1,j)$; and conditioning variables $X_{nk}$, where $k = 1\cdots K$ indexes the different conditioning variables for each event n.
 
@@ -148,7 +148,7 @@ __Appendix C: Return and Statistics Basics__
 
    The dependent variable has ex ante mean 0 and std 1, and the in-sample estimate of the IC of the signal is $\sqrt{R^2}$ from the regression
 
-### 11.6.2 From Event Study to Alpha
+### 12.6.2 From Event Study to Alpha
 
 1. The forecast alpha over the next $j$ periods is
 
@@ -160,15 +160,15 @@ __Appendix C: Return and Statistics Basics__
 
    1. it is consistent with volatility * IC * Score
 
-### 11.6.3 Relationship to CS studies
+### 12.6.3 Relationship to CS studies
 
-## 11.7 The Pitfalls of information analysis
+## 12.7 The Pitfalls of information analysis
 
-### 11.7.1 Data Mining is Easy
+### 12.7.1 Data Mining is Easy
 
 1. it turns out to be surprisingly easy to search through historical data and find patterns that don’t really exist
 
-### 11.7.2 Investment Research
+### 12.7.2 Investment Research
 
 1. Four guidelines can help keep information analysis from turing into data mining:
    1. Intuition
