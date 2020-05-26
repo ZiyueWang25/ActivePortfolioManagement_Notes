@@ -146,7 +146,7 @@ __Appendix C: Return and Statistics Basics__
 
 1. _expected utility_ $U[P]=f_{P}-\lambda_{T} \cdot \sigma_{P}^{2}$
 
-   1. where $f_P$ si the expected excess return, $\lambda_T \cdot \sigma_P^2$ is a penalty for risk, $\lambda_T$ measures _aversion to total risk_, where total risk includes systematic risk and residual risk (from asset selection)
+   1. where $f_P$ is the expected excess return, $\lambda_T \cdot \sigma_P^2$ is a penalty for risk, $\lambda_T$ measures _aversion to total risk_, where total risk includes systematic risk and residual risk (from asset selection)
    2. Some people choose $\tau = \frac{1}{\lambda}$ or $\frac{\lambda}{2}$ for convenience
 
 2. a scientific way to get a reasonable value for $\lambda_T$
@@ -178,8 +178,9 @@ __Appendix C: Return and Statistics Basics__
    1. The active manager is, in fact, responsible for active risk. In the typical case of $\beta_{p}=1$ residual risk equals active risk. If $\beta_{p} \neq 1,$ the manager is responsible for both residual risk and active systematic risk.
 2. Split risk and return into three parts
    1. _Intrinsic_, $f_B - \lambda_T \cdot \sigma_B^2$ : risk and return of the benchmark. it is not under the manager’s control. $\lambda_T$ is aversion to total risk
-   2. _Timing_, $\beta_{PA} \cdot \Delta f_B - \lambda_{BT} \cdot \beta_{PA}^2 \cdot \sigma^2_B$. contribution from timing the benchmark. It is governed by __the manager’s active beta__. $\lambda_{BT}$ is aversion to benchmark timing
-   3. _Residual_, $\alpha_P - \lambda_R \cdot \omega_P^2$. due to the manager’s residual position. $\lambda_R$ is aversion to residual risk.
+   2. _cross effect_, net to zero $\beta_{PA}(\mu_B - 2\lambda_T\sigma_B^2)$
+   3. _Benchmark Timing_, $\beta_{PA} \cdot \Delta f_B - \lambda_{BT} \cdot \beta_{PA}^2 \cdot \sigma^2_B$. contribution from timing the benchmark. It is governed by __the manager’s active beta__. $\lambda_{BT}$ is aversion to benchmark timing
+   4. _Residual. Stock Selection_, $\alpha_P - \lambda_R \cdot \omega_P^2$. due to the manager’s residual position. $\lambda_R$ is aversion to residual risk.
 3. _Value added_:  Timing + Residual (4.15)
    1. $\mathrm{VA}=\left\{\beta_{P A} \cdot \Delta f_{B}-\lambda_{B T} \cdot \beta_{P A}^{2} \cdot \sigma_{B}^{2}\right\}+\left\{\alpha_{P}-\lambda_{R} \cdot \omega_{P}^{2}\right\}$
 
